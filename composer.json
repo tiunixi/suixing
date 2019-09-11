@@ -1,0 +1,11 @@
+{
+    "name": "MyFrame",
+    "description": "PHP Frame",
+    "type": "Frame",
+    "keywords":[
+        "PHP","PHP Frame"
+    ],
+    "require": {
+        "php":">= 5.3.0"
+    }
+}

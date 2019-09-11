@@ -1,0 +1,13 @@
+.center{
+    text-align: center;
+    /* background: url(../img/01.png) */
+}
+.svg{
+    width: 38%;
+    margin-top: -40px;
+    margin-left: 25%   
+}
+h1{
+    
+    font: 400 24px/30px'微软黑体'
+}

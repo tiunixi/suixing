@@ -1,0 +1,45 @@
+
+.section {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    }
+
+.curtain {
+    position: absolute;
+    top:0px;
+    left:0px;
+    opacity: .5;
+    background: -webkit-linear-gradient(top, #0036aa, lightblue);
+    }
+
+.blood-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+  text-shadow: 0 0 10px #fff;
+  font-size: 15px;
+  color: #fff;
+  transition: color .3s ease-in-out;
+}
+.nep-highlight {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+.text-hover {
+  transition: color .2s ease-in-out, text-shadow .3s ease-in-out;
+}
+.text-hover:hover {
+  text-shadow: 0 0 0px #fff;
+  color: #fff;
+}
+.clean-link {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,115 @@
+/*图片
+*/
+.picture{
+    display: none;
+    height: auto;
+    margin-left: 17px;
+}
+
+/* Gallery 以百分比来规定改变发生的时间，或者通过关键词 "from" 和 "to"，等价于 0% 和 100%。0% 是动画的开始时间
+，100% 动画的结束时间*/
+
+
+@keyframes gallery {
+    100% {
+        opacity: 1;		}
+        5%{
+            opacity: 0.2
+        }
+        50%{
+            opacity: 0.5
+        }
+
+}
+
+.gallery {
+    padding: 3.5em;
+    position: relative;
+    overflow: hidden;
+    min-height: 37em;
+}
+
+    
+    @media screen and (max-width: 980px) {
+
+        .gallery {
+            padding: 2em;
+            min-height: 20em;
+        }
+
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .gallery {
+            padding: 1em;
+        }
+
+    }
+
+    .gallery .content {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+/* 动画效果 */
+        .gallery .content .media {
+            animation: gallery 1.75s ease-out 0.2s forwards;
+            /* 低速开始 */
+            margin-bottom: 0;
+            overflow: hidden;
+            opacity: 0;
+            position: relative;
+            width: 25%;
+        }
+
+
+            /* 图片自动移到焦点中心 */
+            .gallery .content .media img {
+                transition: transform 0.2s ease-in-out;
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+            }
+
+            .gallery .content .media:hover img {
+                transform: scale(1.2);
+                /* 图片放大倍数 */
+            }
+
+            @media screen and (max-width: 736px) {
+
+                .gallery .content .media {
+                    width: 50%;
+                }
+
+            }
+
+            @media screen and (max-width: 480px) {
+
+                .gallery .content .media {
+                    width: 100%;
+                }
+
+            }
+
+
+
+            .btn {
+                padding: 6px 12px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                font-weight: normal;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                cursor: pointer;
+                background-image: none;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                background: #71CBFF;
+            }
+            .more{
+                text-align: center;
+            }
